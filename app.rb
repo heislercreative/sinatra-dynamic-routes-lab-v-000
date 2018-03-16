@@ -5,5 +5,10 @@ class App < Sinatra::Base
     @backwards = params[:name].reverse
     "#{@backwards}"
   end
+  
+  get '/square/:number' do
+    @num = params[:number].to_i
+    
+  end
 
 end
