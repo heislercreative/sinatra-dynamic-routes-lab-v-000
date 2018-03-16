@@ -26,7 +26,9 @@ class App < Sinatra::Base
     @num1 = params[:number1]
     @num2 = params[:number2]
     
-    
+    if @op = "#{add.to_downcase}"
+      answer = @num1 + @num2
+      "answer"
   end
   
 end
