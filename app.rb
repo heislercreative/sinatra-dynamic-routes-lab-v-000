@@ -31,7 +31,7 @@ class App < Sinatra::Base
         answer = @num1 + @num2
         "#{answer}"
       when "subtract"
-        answer = 
+        
       when "multiply"
         
       when "divide"
