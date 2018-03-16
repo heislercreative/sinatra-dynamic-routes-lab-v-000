@@ -28,7 +28,7 @@ class App < Sinatra::Base
     
     if @op = "add.to_downcase"
       answer = @num1 + @num2
-      "answer"
+      "#{answer}"
     else
       "Hello"
     end
