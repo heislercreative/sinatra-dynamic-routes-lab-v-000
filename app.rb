@@ -22,15 +22,14 @@ class App < Sinatra::Base
   end
   
   get '/:operation/:number1/:number2' do
-    @op = params[:operation]
+    @op = params[:operation].to_downcase
     @num1 = params[:number1]
     @num2 = params[:number2]
     
     if @op = "add.to_downcase"
       answer = @num1 + @num2
       "#{answer}"
-    else
-      "Hello"
+    elsif @op = "subtract.to_downcase"
     end
   end
   
