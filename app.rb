@@ -28,8 +28,7 @@ class App < Sinatra::Base
     
     case @op
       when "add"
-        answer = @num1 + @num2
-        "#{answer}"
+        "#{@num1 + @num2}"
       when "subtract"
         
       when "multiply"
