@@ -27,7 +27,7 @@ class App < Sinatra::Base
     @num2 = params[:number2]
     
     case @op
-      when"add"
+      when "add"
         answer = @num1 + @num2
         "#{answer}"
       when "subtract"
