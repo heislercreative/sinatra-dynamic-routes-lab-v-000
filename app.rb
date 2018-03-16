@@ -26,10 +26,18 @@ class App < Sinatra::Base
     @num1 = params[:number1]
     @num2 = params[:number2]
     
-    if @op = "add"
-      answer = @num1 + @num2
-      "#{answer}"
-    elsif @op = "subtract"
+    case @op
+      when"add"
+        answer = @num1 + @num2
+        "#{answer}"
+      when "subtract"
+        
+      when "multiply"
+        
+      when "divide"
+        
+      else
+        "Enter a valid mathematical operation."
     end
   end
   
